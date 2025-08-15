@@ -13,7 +13,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="noOrder" class="col-sm-12 form-label">No. Order</label>
+                                <label for="noOrder" class="col-sm-12 form-label">No. Batch</label>
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" name="noOrder" id="noOrder">
                                 </div>
