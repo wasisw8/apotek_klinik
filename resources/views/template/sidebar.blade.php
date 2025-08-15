@@ -56,6 +56,11 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a class='tp-link' href='{{route('master.satuan-obat')}}'>
+                                        Satuan Obat
+                                    </a>
+                                </li>
+                                <li>
                                     <a class='tp-link' href='{{route('master.kategori-obat')}}'>
                                         Kategori Obat
                                     </a>
