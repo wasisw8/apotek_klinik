@@ -13,7 +13,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: "{{ route('master.sediaan-obat.load') }}",
+                    url: "{{ route('master.satuan-obat.load') }}",
                     type: "POST",
                 },
                 pageLength: 10,
@@ -64,7 +64,7 @@
                 var formData = new FormData(form);
                 $.ajax({
                     data: formData,
-                    url: "{{ route('master.sediaan-obat.save') }}",
+                    url: "{{ route('master.satuan-obat.save') }}",
                     type: "POST",
                     processData: false, // ✅ penting untuk FormData
                     contentType: false, // ✅ penting untuk FormData
@@ -116,7 +116,7 @@
                 var formData = new FormData(form);
                 $.ajax({
                     data: formData,
-                    url: "{{ route('master.sediaan-obat.update') }}",
+                    url: "{{ route('master.satuan-obat.update') }}",
                     type: "POST",
                     processData: false, // ✅ penting untuk FormData
                     contentType: false, // ✅ penting untuk FormData
@@ -184,7 +184,7 @@
                 data: {
                     id: id
                 },
-                url: "{{ route('master.sediaan-obat.dataEdit') }}",
+                url: "{{ route('master.satuan-obat.dataEdit') }}",
                 type: "POST",
                 dataType: 'json',
                 success: function(data) {
@@ -214,7 +214,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{ route('master.sediaan-obat.delete') }}",
+                        url: "{{ route('master.satuan-obat.delete') }}",
                         type: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
